@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://zntf.zhuge.com/css/base/base.css">
+    <link rel="stylesheet" href="http://zntf.zhuge.com/css/page/active/V009.css?v=0.7839863116422454">
+</head>
+<body>
+    <div class="zhuge">
+        <header><img src="http://zntf.zhuge.com/img/page/active/V009/header.png"></header>
+        <main>
+            <section class="user-info">
+                <input type="text" name="" placeholder="请输入姓名" class="real_name">
+                <input type="text" name="phone" placeholder="请输入手机号" class="phone" maxlength="13">
+                <div style="text-align:center;">
+                    <input type="text" name="" placeholder="请输入区域" class="region" style="width: 2.3rem;display: inline-block;margin-right: .2rem;">
+                    <input type="text" name="" placeholder="请输入商圈" class="trade_area" style="width: 2.3rem;display: inline-block;">
+                </div>
+                <input type="text" name="" placeholder="请输入公司名称" class="company">
+                <input type="text" name="" placeholder="请输入门店名称" class="store_name">
+                <input type="text" name="" placeholder="请输入熟悉的诸葛顾问姓名/无" class="zg_adviser">
+            </section>
+            <!-- 转盘 -->
+            <section>
+                <div class="turntable-bg">
+                    <b style="color: #fff;font-size: .32rem;display: inline-block;margin-top: .3rem;">-您还有<span style="color: #FFEF6B;font-size: .4rem;" class="Lottery_num">&nbsp;3&nbsp;</span>次抽奖机会-</b>
+                    <div class="pointer">
+                        <img src="http://zntf.zhuge.com/img/page/active/V009/pointer.png" alt="pointer">
+                    </div>
+                    <div class="rotate">
+                        <img id="rotate" src="http://zntf.zhuge.com/img/page/active/V009/turntable.png" alt="turntable">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <img src="http://zntf.zhuge.com/img/page/active/V009/bottom.png">
+            </section>
+            <section class="alert">
+                <div class="pop-layer" id="popLayer"></div>
+                <div style="position: fixed;top: 2rem;z-index: 99999;">
+                    <div class="prize_alert" style="position: relative;">
+                        <img src="http://zntf.zhuge.com/img/page/active/V009/alert.png" alt="" style="margin: 0 .85rem;width: 5.8rem;">
+                        <b>抵扣券十元</b>
+                        <img src="http://zntf.zhuge.com/img/page/active/V009/close.png" style="position: absolute;bottom: -1rem;width: .6rem;left: 50%;transform: translate(-50%);" class="close">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer style="height: .65rem;line-height: .65rem;width: 100%;background:#FF5600;text-align: center; color:#fff; font-size: .2rem;opacity: .7;">
+            本次活动最终解释权归北京诸葛找房信息技术有限公司
+        </footer>
+    </div>
+    <script src="http://zntf.zhuge.com/lib/jquery.min.js"></script>
+    <script src="http://zntf.zhuge.com/lib/rem.js?v=4335"></script>
+    <script src="http://zntf.zhuge.com/lib/awardRotate.js"></script>
+    <script src="./choujiang.js"></script>
+</body>
+</html>
