@@ -1,0 +1,24 @@
+用jQuery实现导航栏吸顶，可以直接监测滚动事件，不一定选择（touchstart，touchmove).
+页面：http://zntf.zhuge.com/?page=CP006;
+     http://zntf.zhuge.com/?page=v012;
+js：
+ $(window).scroll(function(){
+          if($(document).scrollTop() >= $hh){ 
+            headerMiss();
+          }else{
+            headerShow();
+          }
+ })
+ 
+ //headrs不在可视区域后
+function headerMiss(){
+  $('.lead').css({"position":"fixed","top":0,"left":"0","z-index":"100"});
+  $('.empty').show();
+};
+      
+
+//header恢复在可视区域后
+function headerShow(){
+  $('.lead').css({"position":"static","top":0,"left":"0","z-index":"0"});
+  $('.empty').hide();
+};
