@@ -1,0 +1,14 @@
+1.find
+find()方法，用于找出第一个符合条件的数组的成员。如果没有符合条件的成员，则返回undefined.
+[1,2,5,-1,9].find(n=>n<0)  //-1
+
+2.findIndex
+findIndex()与find()方法非常类似，返回第一个符合条件的数组成员的位置。如果所有成员都不符合条件，则返回-1.
+[1,2,5,-1,9].findIndex(n=>n<0)  //3
+
+3.every
+arry.evyery(v=>v>5)
+每一个回调函数都返回true，那every方法返回true,只要有一个返回false,那么不在执行循环直接返回false
+注：空数组调用every返回值就是true.
+
+ 
